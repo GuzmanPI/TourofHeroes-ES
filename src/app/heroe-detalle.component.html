@@ -1,0 +1,13 @@
+<div>
+  <h2>Detalle de {{heroe.nombre}}!</h2>
+  <div>
+    <label>id: </label>{{heroe.id}}
+  </div>
+  <div>
+    <label>nombre: </label>
+    <input class="md-input"
+           [(ng-model)]="heroe.nombre" placeholder="Nombre">
+  </div>
+  <button class="md-button md-default-theme md-raised"
+          [router-link]="routes.heroes.link">Atrás</button>
+</div>

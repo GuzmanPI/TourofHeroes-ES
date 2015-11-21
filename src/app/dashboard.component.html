@@ -1,0 +1,15 @@
+<div class="grid grid-pad">
+	<div *ng-for="#heroe of heroes | slice:0:8" class="col-1-4">
+		<div class="module hero">
+			<div>{{heroe.nombre}}</div>
+			<status
+					[activo]="!heroe.retirado"
+					(change)="onChange($event, heroe)">
+			</status>
+		</div>
+	</div>
+</div>
+
+<h3 *ng-if="ngHeroes.length > 0">
+  {{ngHeroesString}} están en mi equipo!
+</h3>

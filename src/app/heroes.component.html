@@ -1,0 +1,16 @@
+<div>
+  <h2>Lista de Héroes</h2>
+  <ul class="heroes">
+    <li *ng-for="#heroe of heroes"
+      [class.selected]="heroe === heroeSeleccionado"
+      (click)="seleccionarHereoe(heroe)">
+      <span class="badge">{{heroe.id}}</span> {{heroe.nombre}}</a>
+    </li>
+  </ul>
+  <div *ng-if="heroeSeleccionado">
+    <h2>{{heroeSeleccionado.nombre | uppercase}} es mi héroe</h2>
+    <button
+        class="md-button md-default-theme md-raised"
+        (click)="verDetalle()">Ver Detalles</button>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.ng {
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background: url('app/img/angular_solidBlack.svg');
+}
+
+.ng.selected {
+    background: url('app/img/angular_solidRed.svg');
+}
+
+.inactive {
+    background: url('app/img/angular_solidGrey.svg');
+}

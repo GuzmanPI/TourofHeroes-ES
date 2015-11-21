@@ -1,0 +1,4 @@
+.router-link {padding: 5px;text-decoration: none;}
+.router-link:visited, .router-link:link {color: #444;}
+.router-link:hover {color: white; background-color: rgb(100, 181, 246); text-decoration: none;}
+.router-link.router-link-active {color: white; background-color: rgb(21, 101, 192); text-decoration: none;}
